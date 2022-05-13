@@ -1,0 +1,605 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    flex-direction: column;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Upper Contact */
+
+.number{
+    display: flex;
+    background: #008bd6;
+}
+.left{
+    color: white;
+    width: 100%;
+}
+
+.left ul{
+   display: flex;
+   margin-right: 2rem;
+   float: left;
+}
+
+.left ul li{
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    margin-right: 0.5rem;   
+}
+
+.icons{
+    display: flex;
+    color: white; 
+    margin-right: 2rem;
+}
+
+.icons ul{
+    float: left;
+    display: flex;
+   margin-right: 2rem;  
+}
+
+.icons ul li{
+    list-style: none;
+    margin-right: 1rem;
+    font-size: 1rem;    
+}
+ 
+/* Menu Bar */
+
+.number2{
+    position:sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+}
+
+.logo{
+    padding: 20px 80px;
+}
+
+.logo img{
+    width: 200px;  
+    transition: all 3s;  
+}
+
+.logo img:hover{
+    transform: rotate(360deg);
+}
+
+.bar ul{
+    position: relative;
+    color: #002b46;
+    display: flex;
+    margin-left: 20rem;
+    float: right;  
+}
+
+.bar ul li{
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 2rem;
+    list-style: none;    
+}
+
+.bar ul li a{
+    text-decoration: none;
+    color: #002b46;
+}
+
+.bar ul li a:hover{
+   color: #008bd6;
+
+}
+
+.dropdown {
+    position: absolute;
+}
+
+.dropdown ul li a{
+	margin: -82%;
+	padding: 0%;
+	width: 100%;
+	text-align: center;   
+}
+
+.dropdown ul{
+    color: white;
+    border-radius: 10px;
+    margin: 20px -40px;
+	display: block;
+    text-align: center;	
+}
+.dropdown ul li{
+    padding: 10px;
+    background-color: #002b46;
+    display: none;
+    
+}
+
+.dropdown ul li a{
+    color: white;
+}
+
+.bar ul li:hover ul li{
+	display: block;
+}
+
+
+/* homepage image */
+
+.image img{
+   width:100%;
+   height: 100%;
+   position: relative;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 25%; 
+   text-align: center;  
+}
+
+.center p{   
+    color: white;
+    font-size: 2.5rem;
+}
+
+.center .btn{
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    padding: 15px 35px;
+    font-size: 1.5rem;
+    transition: all 2s;
+}
+
+.center .btn:hover{ 
+    background-color: #008bd6;
+}
+
+/* Popular Couses */
+
+.number4{
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 30px auto;  
+}
+
+.heading{
+    color: #002b46;
+    text-align: center;
+}
+
+.heading span{
+    color: #008bd6;
+}
+
+.block{
+    display: flex;
+    text-align: center;
+    transition: all 2s;
+}
+
+.block1{
+    border: 0.1px solid #717171;
+    margin: 20px;
+    padding: 20px 0;
+    transition: all 0.5s;
+}
+
+.block1:hover{
+    transform: scale(1.05);
+}
+
+.block h1{
+    color: #002b46;
+}
+
+.block1 p{
+    color: #717171;
+    line-height: 1.8rem;
+}
+
+.btn{
+    color: #717171;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #002b46;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    color: white;
+    background-color:#002b46;
+}
+
+/* Our Partner */
+
+.number5{
+    height: 100%;
+    width: 100%;
+    padding: 30px 0;
+    background: #f6f6f6;
+}
+
+.heading1{ 
+    color: #002b46;
+    text-align: center;
+}
+
+.heading1 span{
+    color: #008bd6;
+}
+
+.partner img{
+    align-items: center;
+    padding-top: 25px;
+    margin-right: 6.2rem;
+}
+/* Latest Job Opening */
+
+.number6{
+    max-width: 1152px;
+    padding: 0 15px;     
+    margin: 0 auto;   
+}
+
+.heading2{
+    color: #002b46;
+    text-align: center;
+}
+
+.heading2 span{
+    color: #008bd6;
+}
+
+.side-heading{
+    float: left;
+    padding: 30px 0;
+    width: 30%;
+    text-align: center;
+    background: #008bd6;
+    margin: 50px;
+    color: white;
+    transition: all 1s;
+}
+
+.side-heading:hover{
+    transform: scale(1.3);
+}
+
+.contact{
+    justify-content: center;
+    display: flex;
+}
+
+  .contact input, textarea{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border: none;  
+}
+ 
+.team-1 input{
+    text-align: center;
+    border: 1px solid white;
+    transition: all 1s;
+    color: white;
+    margin-right: 1rem;
+}
+  
+.team-1 input:hover{
+   color: #f7f7f7;
+   background: #008bd6;
+   color: #008bd6;
+}
+
+.team{
+    padding-bottom: 1rem;
+}
+ 
+.side-block{
+    float: right;
+    margin: 20px;
+}
+
+  .block2{
+    display: flex;
+    align-items: center;
+}
+
+.side-image img{
+      width: 100px;
+      align-items: center;
+}
+
+.side{
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.side h1{
+    color: #002b46;
+}
+
+.side p1{
+    color: #717171;
+}
+
+.btn2{
+    color: white;
+    padding: 10px 9px;
+    background-color: #008bd6;
+    border: 1px solid #008bd6;
+    transition: all 0.5s;
+}
+
+.btn2:hover{
+    color: #008bd6;
+    border: 1px solid #008bd6;
+    background: white;
+}
+
+/* Our Enterprises */
+
+.number7{
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 25px auto;
+        text-align: center;
+}
+
+.heading4{
+    margin-bottom: 60px;
+    color: #002b46;
+    width: 100%;
+    display: inline-block; 
+}
+
+.heading4 span{
+    color: #008bd6;
+}
+
+.slide-block2{
+    display: flex;
+    transition: all 2s;
+}
+
+.block3{
+    background: #f7f7f7;
+    margin: 20px;
+    padding: 20px;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.block3:hover i{
+    transform: rotateY(150deg);
+}
+
+.icons2 i{
+    position: absolute;
+    top:-15%;
+    left: 40%;
+    color: #008bd6;
+    font-size: 60px;
+    transition: all 2s;
+}
+
+.icons2 i:hover{
+    transform: rotateY(150deg);
+}
+
+.side2 p{
+    color: #717171;
+}
+
+.side2 h1{
+    color: #002b46;
+}
+
+/* Why You Choose Us */
+
+.number8{
+    margin-bottom: 0;
+    background: #f7f7f7;
+    text-align: center;
+    height: 500px;
+}  
+
+.heading5{
+    color: #002b46;
+    margin-top: 30px;
+    width: 100%;
+    display: inline-block;
+    
+}
+.heading5 span{
+    color: #008bd6;
+}
+
+.block4{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.block5 h1{
+    color: #008bd6;
+}
+
+.block5 h2{
+    color: #002b46;
+}
+
+.block5 p{
+    color: #717171;
+    font-size: 1rem;
+}
+
+/* Enter email address */
+
+.number9{
+    background: url(image/iphone.jpg) repeat fixed 100%;
+    width: 100%;
+     height: 300px;
+    position: relative; 
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.bg{
+     width: 100%;
+     height: 300px;   
+     position: absolute;
+     background: rgba(0, 0, 0, 0.72) repeat fixed 100%;
+     text-align: center;
+}
+
+.bg p{    
+    font-size: 2rem;
+    color: white;
+    margin-top: 5%;
+}
+
+.bg input{
+    border: 1px solid white;
+    background-color: transparent;
+    align-items: center;
+    font-size: 1rem;
+    border-right: 0;
+    padding: 1rem 20rem 1rem 1rem;
+    color: white;
+    margin-bottom: 11%;   
+}
+
+.bg i{
+   color: white;
+   font-size: 2rem;
+   background-color: #008bd6;
+   padding: 0.4rem 2rem 1rem 2rem; 
+}
+
+/* Footer */
+
+footer{
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    transition: all 2s;
+}
+
+footer:hover{
+     font-size: 1.2rem;
+}
+
+/*Responsive : Media Quries*/
+
+@media (max-width:1319px) {
+    .bar ul {
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width:1239px) {
+    .bar ul {
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width:1026px) {
+    .bar ul {
+        margin-left: 0rem;
+    }
+    .center {
+        left: 20%;
+    }
+}
+
+@media (max-width:999px) {
+    .bar ul {
+        margin-left: -2rem;
+    }
+}
+
+/* tab size response */
+
+@media (max-width:769px) {
+    .bar ul {
+        margin-left: -2rem;
+    }
+}
+
+/* mobile size response */
+
+@media (max-width:427px) {
+    .icons {
+        
+        margin-left: -6rem;
+    }
+    .bar ul {
+        margin-left: -2rem;
+    }
+    .block{
+        flex-direction: column;
+    }
+    .slide-block2 {
+        flex-direction: column;
+    }
+    .side-heading {
+        width: 80%;
+       
+    }
+    .bar {
+        display: none;
+    }
+    .block4 {
+        flex-direction: column;
+    }
+    .number8 {
+        margin-bottom: 318px;
+        
+    }
+    .bg p {
+        font-size: 2rem;
+    }
+    .bg input {
+        
+        padding: 20px;
+        
+    }
+    .center {
+        position: absolute;
+        
+            top: 39%;
+            left: 18%;
+       
+    }
+    .center p, button{
+        font-size: 1rem;
+    }
+    .center .btn {       
+        padding: 2px;
+        font-size: 1rem;
+    }
+    
+}
+
+
