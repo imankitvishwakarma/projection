@@ -600,9 +600,7 @@ footer:hover{
         font-size: 1rem;
     }
      html,body{
-        width: 100%;
-        padding: 0px;
-	margin: 0px;           
+                
         overflow-x: hidden;
     }
 }
