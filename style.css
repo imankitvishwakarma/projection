@@ -552,7 +552,7 @@ footer:hover{
 @media (max-width:427px) {
     .icons {
         
-        margin-left: -6rem;
+        margin-left: -7rem;
     }
     .bar ul {
         margin-left: -2rem;
@@ -598,6 +598,12 @@ footer:hover{
     .center .btn {       
         padding: 2px;
         font-size: 1rem;
+    }
+	html,body{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
     }
 }
 
