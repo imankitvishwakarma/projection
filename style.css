@@ -549,9 +549,14 @@ footer:hover{
 
 /* mobile size response */
 
-@media (max-width:427px) {
-    .icons {
-        
+@media (max-width:576px) {
+	html,body{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    .icons {       
         margin-left: -7rem;
     }
     .bar ul {
@@ -564,8 +569,11 @@ footer:hover{
         flex-direction: column;
     }
     .side-heading {
-        width: 80%;
-       
+        width: 79%;
+	margin-left: 35px;
+    }
+    .icons2 i {
+        top: -11%;
     }
     .bar {
         display: none;
@@ -575,21 +583,22 @@ footer:hover{
     }
     .number8 {
         margin-bottom: 318px;
-        
     }
     .bg p {
-        font-size: 2rem;
+        margin-top: 74px;
+        font-size: 1.6rem;
     }
     .bg input {
-        
         padding: 20px;
-        
+    }
+	.bg i {
+        padding-bottom: 13px;
+        font-size: 1.4rem;
     }
     .center {
-        position: absolute;
-        
-            top: 39%;
-            left: 18%;
+        position: absolute;    
+        top: 39%;
+        eft: 16%;
        
     }
     .center p, button{
@@ -599,12 +608,7 @@ footer:hover{
         padding: 2px;
         font-size: 1rem;
     }
-	html,body{
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        overflow-x: hidden;
-    }
+	
 }
 
 
